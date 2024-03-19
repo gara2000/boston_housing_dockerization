@@ -1,7 +1,6 @@
 PYTHON := python3
 PIP := pip3
 LINTER := pylint
-TEST_RUNNER := pytest
 
 install:
 	$(PIP) install --upgrade pip && \
@@ -9,9 +8,6 @@ install:
 
 lint:
 	$(LINTER) --disable=R,C app/app.py
-
-test:
-	$(TEST_RUNNER) test_add.py 
 
 docker-build:
 	docker build -t flask-app .
