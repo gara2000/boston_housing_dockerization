@@ -17,7 +17,7 @@ docker-build:
 	docker build -t flask-app .
 
 docker-run:
-	docker run -p 5001:5000 --name flask-app flask-app
+	docker run -p 5000:5000 --name flask-app flask-app
 
 docker-debug:
 	docker run -d -p 5000:5000 --name flask-app flask-app

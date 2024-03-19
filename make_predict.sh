@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 if [ $# -le 1 ]; then
-	echo "usage: <host> <port>"
+#	echo "usage: <host> <port>"
+	HOST=localhost
+	PORT=5000
 else
 	HOST=$1
 	PORT=$2

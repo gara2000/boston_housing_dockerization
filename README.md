@@ -26,7 +26,7 @@ python3 app.py
 ```
 Make a prediction
 ```
-./make_predict.sh localhost 5000
+./make_predict.sh
 ```
 
 ### Run the app with Docker
