@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-PORT=5000
-HOST=172.17.0.2
+if [ $# -le 1 ]; then
+	echo "usage: <host> <port>"
+else
+	HOST=$1
+	PORT=$2
+fi
 echo "Port: $PORT"
 
 # POST method predict
