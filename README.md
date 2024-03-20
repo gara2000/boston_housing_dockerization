@@ -40,7 +40,8 @@ Run the Docker container
 ```bash
 make docker-run
 ```
-Make a prediction
+Make a prediction.
+In another terminal run:
 ```bash
 ./make_predict.sh
 ```
