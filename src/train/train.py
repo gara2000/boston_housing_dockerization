@@ -42,7 +42,7 @@ def save_model(model):
     Save the model to file.
 
     Args:
-        model : The model
+        model : The model.
     """
     model_path = str(dirname)+"/../app/boston_housing_prediction.joblib"
     joblib.dump(model, model_path)
