@@ -5,6 +5,7 @@ This is a flask app, running a boston housing price predictor
 ## Get Started:
 ```bash
 git clone https://github.com/gara2000/boston_housing_dockerization.git
+cd boston_housing_dockerization
 ```
 ### Run the app locally
 Create a virtual environment
