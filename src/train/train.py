@@ -44,7 +44,7 @@ def save_model(model):
     Args:
         model : The model
     """
-    model_path = str(dirname)+"/../app/boston_housing_prediction.joblib"
+    model_path = str(dirname)+"/../app/boston_housing_prediction_test.joblib"
     joblib.dump(model, model_path)
 
 if __name__ == "__main__":
