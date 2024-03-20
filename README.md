@@ -26,6 +26,7 @@ cd src/app
 python3 app.py
 ```
 Make a prediction
+In another terminal run:
 ```
 ./make_predict.sh
 ```
