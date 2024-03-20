@@ -1,12 +1,14 @@
 """
 Training a Random Forest Regression model on the boston housing data set.
 """
+import os
 import logging
 import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 
 logger = logging.getLogger(__name__)
+dirname = os.path.dirname(os.path.abspath(__file__))
 
 def get_data():
     """
@@ -16,7 +18,8 @@ def get_data():
         x : The features.
         y : The labels.
     """
-    data = pd.read_csv("data.csv")
+    data_path = str(dirname)+"/data.csv"
+    data = pd.read_csv(data_path)
     x = data.drop(["PRICE"], axis=1)
     y = data["PRICE"]
     return x, y
@@ -43,7 +46,8 @@ def save_model(model):
     Args:
         model : The model
     """
-    joblib.dump(model, "../app/boston_housing_prediction_test.joblib")
+    model_path = str(dirname)+"/../app/boston_housing_prediction.joblib"
+    joblib.dump(model, model_path)
 
 if __name__ == "__main__":
     logger.info("Starting model training...")
