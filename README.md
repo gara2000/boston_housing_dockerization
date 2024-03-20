@@ -51,3 +51,5 @@ Make a prediction
 > Lint the train.py code: this analyzes the train.py code fo find programming errors, bugs, stylistic issues, ...
 
 > Train the model and update the boston_housing_predition.joblib file, and push it to the repo automatically (make sure that the workflow permissions is set to **Read and write**, otherwise the push to the repo will fail)
+
+* Run ```git pull``` to get the updates locally
