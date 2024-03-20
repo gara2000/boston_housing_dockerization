@@ -1,0 +1,1 @@
+Whenever the training code changes and is pushed to the repo, the model will be trained again and the model file will be replaced with the new model

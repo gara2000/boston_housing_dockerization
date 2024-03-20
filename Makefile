@@ -7,7 +7,7 @@ install:
 		$(PIP) install -r requirements.txt
 
 lint:
-	$(LINTER) --disable=R,C app/app.py
+	$(LINTER) --disable=R,C /src/app/app.py
 
 docker-build:
 	docker build -t flask-app .
