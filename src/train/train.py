@@ -56,4 +56,4 @@ if __name__ == "__main__":
     logger.info("-Saving model...")
     save_model(reg_model)
     logger.info("-Model saved successfully!")
-    logger.info("Model training ended.")
+    logger.info("Model training ended")
