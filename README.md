@@ -22,7 +22,7 @@ make install
 ```
 Run the app
 ```bash
-cd app
+cd src/app
 python3 app.py
 ```
 Make a prediction
