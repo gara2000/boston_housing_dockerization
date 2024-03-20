@@ -42,7 +42,3 @@ Make a prediction
 ```bash
 ./make_predict.sh
 ```
-
-## Train the model
-* Use the ```src/train/train.py``` file to add your training code.
-* Push to the github repo, this will trigger the .github/workflows/python-train.yml file which will run a CI pipeline to lint the train.py code and train the model automatically
