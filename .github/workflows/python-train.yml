@@ -33,3 +33,12 @@ jobs:
     - name: Train model
       if: ${{ github.event_name == 'push' }}
       run: python src/train/train.py
+
+    - name: Add model file to repository
+      if: ${{ github.event_name == 'push' }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update trained model file"
+        git push
