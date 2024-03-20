@@ -2,12 +2,10 @@
 Training a Random Forest Regression model on the boston housing data set.
 """
 import os
-import logging
 import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 
-logger = logging.getLogger(__name__)
 dirname = os.path.dirname(os.path.abspath(__file__))
 
 def get_data():
@@ -50,14 +48,14 @@ def save_model(model):
     joblib.dump(model, model_path)
 
 if __name__ == "__main__":
-    logger.info("Starting model training...")
-    logger.info("-Fetching data...")
+    print("Starting model training...")
+    print("-Fetching data...")
     features, labels = get_data()
-    logger.info("-Data fetched successfully!")
-    logger.info("-Training model...")
+    print("-Data fetched successfully!")
+    print("-Training model...")
     reg_model = train_model(features, labels)
-    logger.info("-Model Trained successfully!")
-    logger.info("-Saving model...")
+    print("-Model Trained successfully!")
+    print("-Saving model...")
     save_model(reg_model)
-    logger.info("-Model saved successfully!")
-    logger.info("Model training ended")
+    print("-Model saved successfully!")
+    print("Model training ended")
