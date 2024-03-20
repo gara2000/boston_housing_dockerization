@@ -42,5 +42,3 @@ jobs:
         git add .
         git commit -m "Update trained model file"
         git push -u origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

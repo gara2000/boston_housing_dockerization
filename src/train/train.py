@@ -58,4 +58,4 @@ if __name__ == "__main__":
     print("-Saving model...")
     save_model(reg_model)
     print("-Model saved successfully!")
-    print("Model training ended")
+    print("Model training ended.")
