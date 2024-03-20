@@ -47,8 +47,9 @@ In another terminal run:
 ```
 
 ## Update the model
-* Use the ```src/train/train.py``` file to add your training code.
-* Use the ```src/train/data.csv``` file to add your data
+This repo offers a Continuous Integration pipeline to automatically train the model upon change of the train.py code or the data.csv data file
+* Use the ```src/train/train.py``` file to change the training code.
+* Use the ```src/train/data.csv``` file to change the data (ensure compatibility between train and test data, and ensure that the last row of the data contains the labels)
 * Push to the github repo, this will trigger the .github/workflows/python-train.yml file which will run a CI pipeline, the pipeline does the following:
 
 > Lint the train.py code: this analyzes the train.py code fo find programming errors, bugs, stylistic issues, ...
