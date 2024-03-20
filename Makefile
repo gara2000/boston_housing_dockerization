@@ -23,4 +23,5 @@ docker-stop:
 	docker rm -f flask-app
 
 docker-clean:
+	docker rm -f flask-app
 	docker rmi -f flask-app
