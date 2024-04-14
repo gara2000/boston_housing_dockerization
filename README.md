@@ -1,6 +1,8 @@
 # Dockerization for the boston housing price prediction
 ## Description
-This is a flask app, running a boston housing price predictor
+This repo has two parts:
+* It trains a boston housing model and packages it into a container on the GitHub container registry
+* It walks you through the process of running an app that predicts the boston housing, locally and using Docker containers
 
 ## Getting Started:
 ```bash
